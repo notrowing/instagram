@@ -1,0 +1,44 @@
+.story{
+    height: 90px;
+    margin-bottom: 30px;
+}
+
+.story_list{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0px;
+    margin: 10px auto;
+}
+
+.story_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 65px; 
+    height: 65px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("img/rainbow.png");
+}
+
+.story_text> img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.story_text{
+    position: relative;
+    font-size: 10px;
+    top: 8px;
+    text-align: center;
+}
+
+.story_text:visited, .story_text:link{
+    text-decoration: none;
+    color: black;
+}
+
+

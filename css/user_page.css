@@ -1,0 +1,391 @@
+/* 왼쪽 메뉴의 프로필메뉴만 굵게  */
+
+#user_container{
+    margin: 0 auto;
+}
+
+.user_content_box{
+    width: 975px;
+    padding: 30px 20px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.user_header{
+    width: 975px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.user_top{
+    width:290px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user_img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.user_info_box{
+    width: 610px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.user_section{
+    display: flex;
+    flex-direction: column;
+}
+
+.user_name{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.user_name>h2{
+    margin:0;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.profile_modify, .archive_story{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    font-size:15px;
+    padding: 0 10px;
+    margin:0 8px;
+    border-radius: 5px;
+    background-color: #efefef;
+}
+
+.profile_modify:hover, .archive_story:hover{
+    background-color: lightgray;
+}
+
+.profile_modify:visited, .profile_modify:link{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.archive_story:visited, .archive_story:link{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.setting{
+    width: 40px;
+    height: 40px;
+    align-items: center;
+}
+
+.setting_img{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.user_follow{
+    padding-left: 0px;
+    display: flex;
+   
+}
+.user_follow>li{
+    list-style: none;
+    margin-right: 20px;
+}
+
+.user_follow>li>span{
+    font-weight: bold;
+}
+.user_detail{
+    display: flex;
+    flex-direction: column;
+}
+
+.user_detail>span{
+    font-weight: bold;
+}
+.user_detail>p{
+    font-size: 12px;
+    margin: 0;
+}
+
+.storage_story{
+    width: 935px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 44px;
+}
+.storage_box{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.storage_plus{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border:solid 1px #efefef;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.storage_img{
+    width: 45px;
+    height: 45px;
+    color:lightgray
+}
+.storage_title_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.storage_title{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* 게시물, 저장됨, 태그됨 선택 메뉴 */
+.user_navi{
+    width: 935px;
+    border-top: solid 1px #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.user_navi > input{
+    display: none;
+    width: 57px;
+    height: 57px;
+}
+
+.user_navi> input:checked + label{
+    font-weight: bold;
+}
+
+.posting, .stored_post{
+    margin-right: 60px;
+}
+
+.posting{
+    width: 57px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    border-top: solid 1px black;
+    color: #000000;
+}
+
+.stored_post{
+    width: 57px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    border-top: none;
+    color: #737373;
+}
+
+.tag_post{
+    width: 57px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    border-top: none;
+    color: #737373;
+}
+
+.navi_img{
+    width: 13px;
+    height: 13px;
+}
+
+.posting_page{
+    display: flex;
+    width: 935px;
+    flex-direction: column;
+}
+
+.stored_post_page{
+    display: none;
+    width: 935px;
+    flex-direction: column;
+}
+
+.tag_post_page{
+    display: none;
+    width: 935px;
+    flex-direction: column;
+}
+
+/* 게시물 페이지*/
+.posting_line{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: stretch;
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 4px;   
+}
+
+.posting_box{
+    display: block;
+    width: 309px;
+    height: 309px;
+    overflow: hidden;
+}
+
+.posting_line>.posting_box:nth-of-type(1),.posting_line>.posting_box:nth-of-type(2){
+    padding-right: 5px;
+}
+
+.posting_img{
+    width: 309px;
+    height: 309px;
+    top: 0;
+    left: 0;
+    transform: translate(40,50);
+    object-fit: cover;   
+}
+
+
+/* 저장됨 페이지*/
+#store_top{
+    display: flex;
+    justify-content: space-between;
+}
+
+#store_top>span{
+    width: 80%;
+    color: #737373;
+    font-size: 12px;
+    margin: 32px 0px 16px;
+}
+
+.new_store{
+    display: flex;
+    color: #0095f6;
+    font-size: 14px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#store_main{
+    display: flex;
+    justify-content: center;
+}
+
+#store_main_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 60px 44px;
+}
+
+#store_img_box{
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.store_img{
+    width: 25px;
+    height: 25px;
+}
+
+#store_main_box>span:nth-of-type(1){
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#store_main_box>span:nth-of-type(2){
+    font-size: 13px;
+    text-align: center;
+    width: 350px;
+    font-family: sans-serif ;
+}
+
+/* 태그됨 페이지*/
+.tag_line{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: stretch;
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.tag_box{
+    display: block;
+    width: 309px;
+    height: 309px;
+    overflow: hidden;
+}
+
+.tag_line>.tag_box:nth-of-type(1),.tag_line>.tag_box:nth-of-type(2){
+    padding-right: 5px;
+}
+
+.tag_img{
+    width: 309px;
+    height: 309px;
+    top: 0;
+    left: 0;
+    transform: translate(40,50);
+    object-fit: cover;  
+}
+
+#insta_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+#insta_info>span{
+    margin: 0 10px 20px;
+    font-size: 12px;
+    color: #737373;
+}
+
+footer > div:nth-of-type(2){
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    color: #737373;
+}

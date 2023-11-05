@@ -1,0 +1,134 @@
+#logo_box{
+    display: flex;
+    padding: 20px;
+    width: 80%;
+    align-items: center;
+    /* border: solid 1px  lightgray; */
+}
+
+.logo_icon{
+    display: none;
+    width: 20px;
+    height: 20px;
+    color: black;
+}
+
+.logo_image{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    color: black; 
+}
+
+.logo_image:link, .logo_image:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.left_navi{
+    width: 100%;
+    height: 90%;
+    font-size: 16px;
+    list-style: none;
+    align-items: center;
+    /* border: solid 1px  lightgray; */
+}
+
+.navi_button:hover{
+    border-radius: 5px;
+    background-color:#efefef;
+}
+
+.navi_button> a{
+    display: flex;
+    padding: 12px;
+    margin: 10px auto;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.navi_icon{
+    width: 20px;
+    height: 20px;
+}
+
+.navi_img_box{
+    width: 25px;
+    height: 25px;
+}
+.navi_user_img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: solid 1px black;
+}
+.navi_img{
+    width: 15px;
+    height: 15px;
+}
+
+.navi_title{
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 16px;
+}
+
+.left_navi>li>a:link,.left_navi>li>a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.left_navi2{
+    width: 100%;
+    font-size: 16px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.left_navi2>li{
+    list-style: none;
+}
+
+.left_navi2 >li> a{
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    margin: 10px auto;
+}
+   
+.left_navi2>li>a:link,.left_navi2>li>a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* 화면 크기에 따른 메뉴 조절 */
+@media screen and (max-width:1260px){
+    .navi_title{
+        display: none;
+    }
+    #logo_box{
+        padding:0px;
+        width:100%;
+        height: 43px;
+        margin: 10px 0;
+        justify-content: center;
+    }
+    .logo_icon{
+        display: flex;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+    }
+    #logo_box:hover{
+        border-radius: 5px;
+        background-color:#efefef;
+    }
+    .logo_image{
+        display:none;
+    }
+    .navi_button> a{
+        justify-content: center;
+    }
+   
+}

@@ -1,0 +1,231 @@
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* 메인 박스 */
+#container_main{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 300px;
+    height: 400px;
+    margin-bottom: 10px;
+    margin: 10px auto;
+}
+
+.container{
+    border: solid 1px lightgray;
+    margin-top:10px;
+}
+
+#insta_logo_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height:100px;
+}
+
+.insta_logo{
+    display: flex;
+    justify-content: center;
+    width: 165px;
+    height: 45px;
+}
+
+/* 메인 로그인 부분*/
+.id_InputBox, .pw_InputBox{
+    display: block;
+    border-radius: 5px;
+    background-color: #fafafa;
+    border: solid 1px lightgray;
+    font-size: 9px;
+    width: 200px;
+    height: 30px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.id_InputBox:focus, .pw_InputBox:focus{
+   
+   outline: none;
+}
+
+.login_button{
+    display: block;
+    background-color: #0095f6;
+    border: solid 1px #0095f6;
+    border-radius: 5px;
+    width: 205px;
+    height: 25px;
+    margin: 0 auto;
+}
+
+.login_button:hover{
+    background-color: #0040f0;
+}
+
+.login_button a:link, .login_button a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+/* -또는- */
+.or_text{
+    width: 230px;
+    display: flex;
+    flex-basis: 100%;
+    margin: 8px auto;
+    align-items: center;
+    color: gray;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.or_text::before, .or_text::after{
+    content: "";
+    flex-grow: 1;
+    background: lightgray;
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 16px;
+}
+
+/* 페이스북으로 로그인 */
+.find_PW{
+    padding: 0px;
+    text-align: center; 
+}
+.find_PW a:link, .find_PW a:visited{
+    text-decoration: none;
+    color: navy;
+} 
+.find_PW > a {
+    display: block;
+    color: navy;
+    margin-bottom: 10px;
+}
+.find_PW > a:nth-of-type(1){
+    font-size: 10px;
+    font-weight: bold;
+}
+.find_PW > a:nth-of-type(1)::before{
+    content: "";
+    display: inline-block;
+    background-image:url('https://cdn-icons-png.flaticon.com/512/124/124010.png');
+    background-size:15px 15px;
+    width:15px; height: 15px;
+    vertical-align: middle;
+    margin-right: 5px ;
+    
+}
+.find_PW > a:nth-of-type(2){
+    font-size: 8px;
+}
+
+/* 서브 박스 : 계정 가입하기 */
+.new_Account{
+    height: 50px;
+    padding: 0px;
+    text-align: center; 
+    border: solid 1px lightgray;
+    margin-top: 10px;
+    
+}
+.new_Account>p{
+    display: inline-block;
+    font-size: 10px;
+    line-height: 17px;
+    margin-top: 15px;
+}
+
+.new_Account a:link, .new_Account a:visited{
+    text-decoration: none;
+    color: #0095f6;
+    font-weight: bold;
+}
+
+#new_down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#new_down>span{
+    font-size: 8px;    
+}
+
+#down_img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#down_img>a>img{
+    width: 85px;
+    height: 30px;
+}
+
+#down_img>a>img:nth-of-type(1){
+    margin-right: 20px;
+}
+
+/* 인스타 그램 정보 */
+
+#insta_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+#insta_info>span{
+    margin: 0 10px 20px;
+    font-size: 5px;
+    color: #737373;
+}
+
+footer > div:nth-of-type(2){
+    display: flex;
+    justify-content: center;
+    font-size: 5px;
+    color: #737373;
+}
+
+/* 로그인에서 main.html로 가기위한 임시 코드입니다. */
+
+#go_main{
+    display:flex;
+    width: 250px;
+    height: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+#go_mainBox{
+    display: flex;
+    font-size: 10px;
+    border-radius: 5px;
+    border: solid 1px lightgray;
+    align-items: center;
+}
+
+#go_mainImg{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border: solid 1px black;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#go_mainBox>span{
+    color: navy;
+    margin-right: 10px;
+}

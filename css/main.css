@@ -1,0 +1,76 @@
+
+body { 
+   background-color: #fafafa;
+}
+
+#container_main{
+    margin: 0px auto;
+    display: flex;
+}
+
+.left_side{
+    width: 16dvw;
+    height: 100dvh;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    border-right: solid 1px lightgray;
+    padding: 10px;
+    flex-direction: column; 
+    padding-bottom: 20px;
+    justify-content: space-around;
+}
+
+#container{
+    display:flex;
+    margin: 10px auto;
+    justify-content: center;
+}
+
+#container_content{
+    width:630px;
+    padding: 10px 10px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.header{
+    width:100%;
+}
+
+.content{
+    width:80%;
+    border-bottom: solid 1px  lightgray;
+    display:block;
+    margin-bottom: 20px;
+}
+
+.right_side{
+    display: block;
+    padding-left: 60px;
+    width: 320px;
+    height: 30%;
+}
+
+/* 화면 크기에 따른 메뉴 조절 */
+@media screen and (max-width:1260px){
+    .left_side{
+        width: 5dvw;
+    }
+}
+@media screen and (max-width:1160px){
+    .left_side{
+        width: 5dvw;
+    }
+    .right_side{
+        display: none;
+    }
+}
+
+@media screen and (max-width:760px){
+    .left_side{
+        display: none;
+    }
+}
