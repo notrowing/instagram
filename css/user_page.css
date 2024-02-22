@@ -107,6 +107,7 @@
 .user_follow>li{
     list-style: none;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .user_follow>li>span{
